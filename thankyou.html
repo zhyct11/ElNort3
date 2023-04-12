@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="Images/Accomodation Logo.png">
+    <link rel="stylesheet" href="Images/Transition.css">
+    <link rel="stylesheet" href="Images/Forms.css">
+    <title>Checkout</title>
+    <style>
+        .room_num_u{
+            margin: 20px;
+            font-size: 2.5em;
+            bottom: -55px;
+            right: 30%;
+        }
+        .upright_container{
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="transition transition1 is-active"></div>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="Accomodation.html">
+                    <img src="Images/Accomodation Logo (3).png" alt="Logo" width="90px" height="100px" class="icon">
+                </a>
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul class="ul2">
+                                        <li class="li2"><a href="Accomodation.html">Home</a></li>
+                                        <li class="li2"><a href="Rooms.html">Rooms</a></li>
+                                        <li class="li2"><a href="Contact Us Accomodation.html"> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upright_container">
+                    <h2 class="room_num_u" style="opacity: 0;">Reservation</h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="loading_animation">
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Personal Information</h3>
+
+                <div class="inputBox">
+                    <span>First Name :</span>
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <span>Middle Name :</span>
+                    <input type="email" required>
+                </div>
+                <div class="inputBox">
+                    <span>Last Name :</span>
+                    <input type="text" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="Images/card-pics.png" alt="Accepted Cards">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="text" required min="12" max="14">
+                </div>
+                <div class="inputBox">
+                    <span>Expiry Month :</span>
+                    <input type="text" name="month" placeholder="MM" maxlength="2" size="2" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Expiry Year :</span>
+                        <input type="number" name="year" placeholder="YY" maxlength="2" size="2"  required >
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" required min="3" max="4">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <a href="thankyou.html"><input type="submit" value="Place Booking" class="submit-btn"></a>
+        <input type="submit" value="Print Reciept" class="submit-btn" onclick="window.print()">
+
+    </form>
+
+</div>    
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <ul>
+            <li><a href="Accomodation.html">Home</a></li>
+            <li><a href="Contact Us Accomodation.html">Contact us</a></li>
+            <li><a href="Rooms.html">Rooms</a></li>
+            </ul>
+            </div>
+        <div class="row">
+            <p>&copy;2023 El Nort3 | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="Transition.js"></script>
+    <script src="Function.js"></script>
+</body>
+</html>

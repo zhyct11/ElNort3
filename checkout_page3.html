@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="Images/Accomodation Logo.png">
+    <link rel="stylesheet" href="Images/Transition.css">
+    <link rel="stylesheet" href="Images/Multiple Pages (Accomodation).css">
+    <title>Checkout</title>
+    <style>
+        .room_num_u{
+            margin: 20px;
+            font-size: 2.5em;
+            bottom: -55px;
+            right: 30%;
+        }
+        .upright_container{
+            margin-bottom: 60px;
+        }
+        .title{
+            font-size: 2em;
+            margin: 0 70px 20px 140px
+        }
+        .calendar-in{
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="transition transition1 is-active"></div>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="Accomodation.html">
+                    <img src="Images/Accomodation Logo (3).png" alt="Logo" width="90px" height="100px" class="icon">
+                </a>
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul class="ul2">
+                                        <li class="li2"><a href="Accomodation.html">Home</a></li>
+                                        <li class="li2"><a href="Rooms.html">Rooms</a></li>
+                                        <li class="li2"><a href="Contact Us Accomodation.html"> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upright_container">
+                    <h2 class="room_num_u">Reservation</h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="loading_animation">
+        <h2 class="title">Utopian Suite</h2>
+        <h2 class="peso">₱</h2>
+        <input class="price" id="price" value="12,000" type="text" disabled>
+        <img src="Images/UTOPIAN SUITE (Room 3).jpg" alt="Room 3" class="imagecheck">
+        <input type="date" class="calendar-in" required>
+        <h3 class="subtxt2">Check In</h3>
+        <input type="date" class="calendar-out" required>
+        <h3 class="subtxt3">Check Out</h3>
+        <input type="number" class="nights" id="nights" min="1" max="100" required>
+        <h3 class="subtxt4">Night/s</h3>
+        <input type="number" class="quantity" id="quantity" min="1" max="100" required>
+        <h3 class="subtxt5">Quantity of Rooms</h3>
+        <h2 class="subtxt8">TOTAL</h3>
+        <h2 id="total"></h2>
+        <a href="Payment1.html"><button class="payment-btn">Proceed to Payment</button></a>\
+        <button class="total-btn" onclick="Total()">Total Cost</button>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <ul>
+            <li><a href="Accomodation.html">Home</a></li>
+            <li><a href="Contact Us Accomodation.html">Contact us</a></li>
+            <li><a href="Rooms.html">Rooms</a></li>
+            </ul>
+            </div>
+        <div class="row">
+            <p>&copy;2023 El Nort3 | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="Transition.js"></script>
+    <script src="Function.js"></script>
+</body>
+</html>
