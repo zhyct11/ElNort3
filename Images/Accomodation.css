@@ -109,6 +109,11 @@ body {
     font-weight: 500;
     font-size: 1.125em;
     font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s ease-in-out;
+}
+.explore:hover{
+    background: #315966;
+    color: white;
 }
 
 /*Left Line*/
@@ -214,7 +219,7 @@ a:hover i {
 .card_btn{
     position: relative;
     color: #1f3d47;
-    background: #8fabba;
+    background: #6991a6;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -222,7 +227,11 @@ a:hover i {
     font-weight: 500;
     cursor: pointer;
     left: 25px;
-    top:25%
+    top:25%;
+    transition: 0.3s ease-in-out;
+}
+.card_btn:hover{
+    background: #8fabba;
 }
 /*Navigation Bar*/
 

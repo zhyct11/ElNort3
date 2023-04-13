@@ -291,27 +291,37 @@ input[type="text"].price{
 .button:hover:before {
     width: 100%;
 }
+
+/* Sales Page*/
+
 td, th {
+    width: 200px;
     border: 1px solid black;
     text-align: left;
-    padding: 25px;
+    padding: 10px;
+    font-size: 10px;
+    font-size: 1em;
 }
 .g{
     padding: 0;
 }
 .pdata{
+    outline: none;
+    width: 200px;
     padding: 10px;
     background-color: transparent;
     border: none;
 }
 .total_data{
+    outline: none;
+    width: 200px;
     padding: 10px;
     background-color: transparent;
     border: none;
 }
 .text-head{
     position: relative;
-    left: 60%;
+    left: 0%;
     top: 100px;
     text-align: right;
     color: #fff;
@@ -332,9 +342,9 @@ td, th {
 }
 .txt{
     position: relative;
-    left: 70%;
+    left: 60%;
     top: 370px;
-    font-size: 4em;
+    font-size: 3em;
     width: 700px;
 }
 .p_sales{
@@ -348,21 +358,31 @@ td, th {
 }
 table{
     position: relative;
-    left: 35%;
+    left: 20%;
     top: 370px;
     border-spacing: 0;
 }
 .dates{
+    font-weight: bold;
     background-color: #64c8c2;
 }
 .head{
     background-color: #f6b26b;
 }
 .total_sales{
+    padding: 15px;
     background-color: #e06666;
     text-align: center;
 }
+#sales_btn{
+    background-color: #e06666;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
 #grand-total{
+    text-align: center;
+    font-weight: bold;
     color: red;
     font-size: 2em;
 }
