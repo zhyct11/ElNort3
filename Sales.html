@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Contact Us</title>
+        <title>Sales *TOP SECRET*</title>
         <link rel="shortcut icon" type="image/png" href="Images/Accomodation Logo (3).png">
         <link rel="stylesheet" href="Images/Multiple Pages (Accomodation).css">
         <style>
         .footer{
-            margin-top: 2750px;
-             background: #151414
+            margin-top: 1900px;
+            background: #151414
         } 
         .banner {
             background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("Images/banner.webp");
@@ -29,7 +29,7 @@
             <header>
                 <nav>
                     <a href="Accomodation.html">
-                        <img src="Images/Accomodation Logo (2).png" alt="Logo" width="90px" height="100px" height="90px" style="margin:20px">
+                        <img src="Images/Accomodation Logo (3).png" alt="Logo" width="90px" height="100px" height="90px" style="margin:20px">
                     </a>
                     <div class="navbar" style="background:none">
                         <ul class="ul1">    
@@ -196,35 +196,37 @@
                         <td rowspan="5" class="dates">January - March  2023</td>
                         <td>Harmony Haven</td>
                         <td>5,500</td>
-                        <td class="g"><input type="text" class="pdata"></td>
-                        <td class="g"><input type="text" class="total_data"></td>>
+                        <td class="g"><input type="text" id="h-data" class="pdata"></td>
+                        <td id="h-total"></td>
                     </tr>
                     <tr>
                         <td>Elysian Haven</td>
                         <td>8,500</td>
-                        <td class="g"><input type="text" class="pdata"></td>
-                        <td class="g"><input type="text" class="total_data"></td>
+                        <td class="g"><input type="text" id="e-data" class="pdata"></td>
+                        <td id="e-total"></td>
                     </tr>
                     <tr>
                         <td>Utopian Suite</td>
                         <td>10,000</td>
-                        <td class="g"><input type="text" class="pdata"></td>
-                        <td class="g"><input type="text" class="total_data"></td>
+                        <td class="g"><input type="text" id="u-data" class="pdata"></td>
+                        <td id="u-total"></td>
                     </tr>
                     <tr>
                         <td>Nirvana Nest</td>
                         <td>12,000</td>
-                        <td class="g"><input type="text" class="pdata"></td>
-                        <td class="g"><input type="text" class="total_data"></td>
+                        <td class="g"><input type="text" id="n-data" class="pdata"></td>
+                        <td id="n-total"></td>
                     </tr>
                     <tr>
                         <td>Blissful Oasis</td>
                         <td>14,500</td>
-                        <td class="g"><input type="text" id=""class="pdata"></td>
-                        <td class="g"><input type="text" class="total_data"></td>
+                        <td class="g"><input type="text" id="b-data" class="pdata"></td>
+                        <td id="b-total"></td>
                     </tr>
                     <tr>
-                        <td colspan="4" class="total_sales">TOTAL SALES</td>
+                        <td colspan="4" class="total_sales">
+                            <button onclick="totalSales()" id="sales_btn">TOTAL SALES</button>
+                        </td>
                         <td id="grand-total"></td>
                     </tr>
                 </table>
@@ -242,5 +244,6 @@
                 </div>
             </footer>
         <script src="Transition.js"></script>
+        <script src="Function.js"></script>
     </body>
 </html>

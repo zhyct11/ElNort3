@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="Images/Accomodation Logo.png">
+    <link rel="shortcut icon" type="image/png" href="Images/Accomodation Logo (3).png">
     <link rel="stylesheet" href="Images/Transition.css">
     <link rel="stylesheet" href="Images/Forms.css">
     <title>Checkout</title>
@@ -92,21 +92,21 @@
                 </div>
                 <div class="inputBox">
                     <span>credit card number :</span>
-                    <input type="text" required min="12" max="14">
+                    <input type="text" required minlength="12" maxlength="14">
                 </div>
                 <div class="inputBox">
                     <span>Expiry Month :</span>
-                    <input type="text" name="month" placeholder="MM" maxlength="2" size="2" required>
+                    <input type="number" name="month" placeholder="MM" maxlength="2" size="2" min="1" max="12" required>
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
                         <span>Expiry Year :</span>
-                        <input type="number" name="year" placeholder="YY" maxlength="2" size="2"  required >
+                        <input type="number" name="year" placeholder="YY" maxlength="4" size="2" min="2023" max="2040" required >
                     </div>
                     <div class="inputBox">
                         <span>CVV :</span>
-                        <input type="text" required min="3" max="4">
+                        <input type="text" required minlength="3" maxlength="4">
                     </div>
                 </div>
 
